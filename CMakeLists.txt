@@ -48,3 +48,5 @@ configure_file(eigen3.pc.in eigen3.pc)
 file(MAKE_DIRECTORY ${CMAKE_INSTALL_PREFIX}/lib/pkgconfig)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/eigen3.pc
         DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/pkgconfig)
+install(FILES ${SOURCE_DIR}/cmake/FindEigen3.cmake
+        DESTINATION ${CMAKE_INSTALL_PREFIX}/share/cmake)
